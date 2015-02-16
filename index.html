@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-2.1.3.min.js"></script>
+    <script src="plugin.js"></script>
+    <style type="text/css">
+        table {
+            border-collapse: collapse;
+            background: #f5f6ce;
+            border: 4px solid #000000;
+        }
+        td, th {
+            padding: 5px;
+            border: 2px solid #2e9afe;
+            width: 130px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <caption>Таблица</caption>
+    <tr>
+        <th>First Name</th>
+        <th>Middle Name</th>
+        <th>Last Name</th>
+        <th>Year</th>
+        <th>Status</th>
+    </tr>
+    <tr><td>Иван</td><td>Иванович</td><td>Иванов</td><td>1985</td><td>1</td></tr>
+    <tr><td>Иван</td><td>Иванович</td><td>Петров</td><td>1986</td><td>0</td></tr>
+    <tr><td>Иван</td><td>Петрович</td><td>Николаев</td><td>1985</td><td>0</td></tr>
+    <tr><td>Иван</td><td>Николаевич</td><td>Иванов</td><td>1982</td><td>1</td></tr>
+    <tr><td>Иван</td><td>Иванович</td><td>Николаев</td><td>1990</td><td>1</td></tr>
+    <tr><td>Петр</td><td>Петрович</td><td>Валентинов</td><td>1981</td><td>1</td></tr>
+    <tr><td>Петр</td><td>Валентинович</td><td>Валентинов</td><td>1985</td><td>0</td></tr>
+    <tr><td>Петр</td><td>Николаевич</td><td>Петров</td><td>1985</td><td>0</td></tr>
+    <tr><td>Петр</td><td>Валентинович</td><td>Петров</td><td>1985</td><td>1</td></tr>
+    <tr><td>Николай</td><td>Николаевич</td><td>Николаев</td><td>1986</td><td>1</td></tr>
+    <tr><td>Николай</td><td>Николаевич</td><td>Валентинов</td><td>1986</td><td>1</td></tr>
+    <tr><td>Николай</td><td>Валентинович</td><td>Николаев</td><td>1972</td><td>0</td></tr>
+    <tr><td>Валентин</td><td>Николаевич</td><td>Валентинов</td><td>1990</td><td>0</td></tr>
+    <tr><td>Валентин</td><td>Иванович</td><td>Валентинов</td><td>1972</td><td>1</td></tr>
+</table>
+<script>$('table').sortPlugin();</script>
+</body>
+</html>
